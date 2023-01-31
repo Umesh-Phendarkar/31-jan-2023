@@ -8,3 +8,12 @@ resource "aws_instance" "myFirstinstance" {
     Name = "my-ec2"
   }
 }
+
+resource "aws_s3_bucket" "bucket1" {
+  bucket = "31-jan-2023-umesh-393838949"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
